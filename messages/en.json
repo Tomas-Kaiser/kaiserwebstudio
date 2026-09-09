@@ -12,7 +12,10 @@
     "language": "Language"
   },
   "Home": {
-    "title": "Welcome to Kaiser Web Studio",
-    "subtitle": "I build websites for local small businesses."
+    "eyebrow": "Web design for local businesses",
+    "title": "A website that brings you more local customers",
+    "subtitle": "I design and build fast, easy-to-find websites for shops, trades, and local services — so people can find you, trust you, and get in touch.",
+    "primaryCta": "Get a free quote",
+    "secondaryCta": "See services"
   }
 }

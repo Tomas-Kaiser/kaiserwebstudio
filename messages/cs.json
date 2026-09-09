@@ -12,7 +12,10 @@
     "language": "Jazyk"
   },
   "Home": {
-    "title": "Vítejte v Kaiser Web Studio",
-    "subtitle": "Vytvářím webové stránky pro místní malé podniky."
+    "eyebrow": "Tvorba webů pro místní podniky",
+    "title": "Web, který vám přivede více místních zákazníků",
+    "subtitle": "Navrhuji a vytvářím rychlé a snadno dohledatelné webové stránky pro obchody, řemeslníky a místní služby — aby vás lidé našli, důvěřovali vám a ozvali se.",
+    "primaryCta": "Nezávazná nabídka",
+    "secondaryCta": "Zobrazit služby"
   }
 }
