@@ -5,8 +5,11 @@
   },
   "Nav": {
     "home": "Home",
+    "about": "About",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Menu",
+    "language": "Language"
   },
   "Home": {
     "title": "Welcome to Kaiser Web Studio",

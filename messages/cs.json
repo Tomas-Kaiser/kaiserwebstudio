@@ -5,8 +5,11 @@
   },
   "Nav": {
     "home": "Domů",
+    "about": "O mně",
     "services": "Služby",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "menu": "Menu",
+    "language": "Jazyk"
   },
   "Home": {
     "title": "Vítejte v Kaiser Web Studio",
