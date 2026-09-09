@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { Globe, Check } from "lucide-react";
 import { routing } from "@/i18n/routing";
+import { localeInfo } from "@/i18n/locale-info";
 import { Link, usePathname } from "@/i18n/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -12,11 +13,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
-
-const localeInfo: Record<string, { label: string; flag: string }> = {
-  cs: { label: "Čeština", flag: "🇨🇿" },
-  en: { label: "English", flag: "🇬🇧" },
-};
 
 export function LanguageSwitcher() {
   const locale = useLocale();

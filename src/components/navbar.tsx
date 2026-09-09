@@ -1,9 +1,10 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { Menu } from "lucide-react";
+import { Menu, Check } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import { localeInfo } from "@/i18n/locale-info";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Sheet,
@@ -22,11 +23,6 @@ const navItems = [
   { key: "services", href: "/services" },
   { key: "contact", href: "/contact" },
 ] as const;
-
-const localeLabels: Record<string, string> = {
-  cs: "Čeština",
-  en: "English",
-};
 
 export function Navbar() {
   const t = useTranslations("Nav");
@@ -98,11 +94,15 @@ export function Navbar() {
                         href={pathname}
                         locale={loc}
                         className={cn(
-                          "rounded-md px-2 py-2 text-sm hover:bg-muted",
+                          "flex items-center gap-2 rounded-md px-2 py-2 text-sm hover:bg-muted",
                           loc === locale && "font-semibold"
                         )}
                       >
-                        {localeLabels[loc]}
+                        <span aria-hidden="true">{localeInfo[loc].flag}</span>
+                        <span>{localeInfo[loc].label}</span>
+                        <Check
+                          className={cn("ml-auto", loc !== locale && "invisible")}
+                        />
                       </Link>
                     }
                   />
