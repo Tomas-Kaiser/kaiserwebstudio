@@ -1,0 +1,15 @@
+{
+  "Metadata": {
+    "title": "Kaiser Web Studio",
+    "description": "Building websites for local small businesses."
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Home": {
+    "title": "Welcome to Kaiser Web Studio",
+    "subtitle": "I build websites for local small businesses."
+  }
+}

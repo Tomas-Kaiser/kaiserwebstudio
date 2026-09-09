@@ -1,0 +1,15 @@
+{
+  "Metadata": {
+    "title": "Kaiser Web Studio",
+    "description": "Tvorba webových stránek pro malé místní podniky."
+  },
+  "Nav": {
+    "home": "Domů",
+    "services": "Služby",
+    "contact": "Kontakt"
+  },
+  "Home": {
+    "title": "Vítejte v Kaiser Web Studio",
+    "subtitle": "Vytvářím webové stránky pro místní malé podniky."
+  }
+}
