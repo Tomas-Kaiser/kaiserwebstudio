@@ -1,13 +1,21 @@
 "use client";
 
 import { useLocale } from "next-intl";
+import { Globe, Check } from "lucide-react";
 import { routing } from "@/i18n/routing";
 import { Link, usePathname } from "@/i18n/navigation";
+import { buttonVariants } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 
-const labels: Record<string, string> = {
-  cs: "CS",
-  en: "EN",
+const localeInfo: Record<string, { label: string; flag: string }> = {
+  cs: { label: "Čeština", flag: "🇨🇿" },
+  en: { label: "English", flag: "🇬🇧" },
 };
 
 export function LanguageSwitcher() {
@@ -15,21 +23,32 @@ export function LanguageSwitcher() {
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center gap-1 text-sm">
-      {routing.locales.map((loc) => (
-        <Link
-          key={loc}
-          href={pathname}
-          locale={loc}
-          className={cn(
-            "px-2 py-1 rounded-md hover:bg-accent",
-            loc === locale && "font-semibold text-foreground",
-            loc !== locale && "text-muted-foreground"
-          )}
-        >
-          {labels[loc]}
-        </Link>
-      ))}
-    </div>
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        aria-label="Change language"
+        className={buttonVariants({ variant: "ghost", size: "icon" })}
+      >
+        <Globe />
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="min-w-40">
+        {routing.locales.map((loc) => (
+          <DropdownMenuItem
+            key={loc}
+            render={
+              <Link href={pathname} locale={loc}>
+                <span aria-hidden="true">{localeInfo[loc].flag}</span>
+                <span>{localeInfo[loc].label}</span>
+                <Check
+                  className={cn(
+                    "ml-auto",
+                    loc !== locale && "invisible"
+                  )}
+                />
+              </Link>
+            }
+          />
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }
