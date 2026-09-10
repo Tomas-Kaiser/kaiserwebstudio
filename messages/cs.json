@@ -26,6 +26,52 @@
     "projectDescription": "Portfoliový web pro profesionálního fotografa s administrací pro správu alb a fotek.",
     "cta": "Navštívit web"
   },
+  "Packages": {
+    "title": "Balíčky",
+    "subtitle": "Tři výchozí body — každý projekt přizpůsobím tomu, co vaše firma skutečně potřebuje.",
+    "tiers": [
+      {
+        "name": "Starter",
+        "description": "Jednoduchý, profesionální prezentační web, díky kterému vás lidé najdou online.",
+        "priceLabel": "Nejlepší pro jednostránkovou prezentaci",
+        "features": [
+          "Jednostránkový design",
+          "Responzivní pro mobily",
+          "Kontaktní údaje a odkazy na sociální sítě",
+          "Rychlé načítání a základní SEO",
+          "Jedno kolo úprav"
+        ],
+        "cta": "Nezávazná nabídka"
+      },
+      {
+        "name": "Growth",
+        "badge": "Nejoblíbenější",
+        "description": "Vícestránkový web s formuláři pro poptávky a jednoduchou administrací pro správu obsahu.",
+        "priceLabel": "Nejlepší pro rostoucí firmu",
+        "features": [
+          "Vícestránkový web",
+          "Kontaktní a poptávkové formuláře",
+          "Jednoduchá administrace obsahu",
+          "E-mailové notifikace o poptávkách",
+          "Základní nastavení SEO a analytiky"
+        ],
+        "cta": "Nezávazná nabídka"
+      },
+      {
+        "name": "Custom",
+        "description": "Zcela individuální řešení pro náročnější projekty — vlastní funkce, integrace a škálování.",
+        "priceLabel": "Nejlepší pro pokročilé požadavky",
+        "features": [
+          "Vlastní funkce a integrace",
+          "Uživatelské účty, rezervace nebo e-shop",
+          "Škálovatelná architektura",
+          "Možnost dlouhodobé podpory",
+          "Rozsah a termíny na míru"
+        ],
+        "cta": "Probrat projekt"
+      }
+    ]
+  },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. Všechna práva vyhrazena."
   }

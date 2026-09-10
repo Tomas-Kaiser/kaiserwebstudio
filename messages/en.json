@@ -26,6 +26,52 @@
     "projectDescription": "A portfolio site for a professional photographer, with an admin area for managing albums and photos.",
     "cta": "Visit site"
   },
+  "Packages": {
+    "title": "Packages",
+    "subtitle": "Three starting points — every project is scoped to what your business actually needs.",
+    "tiers": [
+      {
+        "name": "Starter",
+        "description": "A simple, professional presentation site to get your business found online.",
+        "priceLabel": "Best for a single-page presence",
+        "features": [
+          "Single-page design",
+          "Mobile responsive",
+          "Contact info & social links",
+          "Fast loading & SEO basics",
+          "One round of revisions"
+        ],
+        "cta": "Get a quote"
+      },
+      {
+        "name": "Growth",
+        "badge": "Most popular",
+        "description": "A multi-page site with lead-capture forms and a simple admin panel to manage content yourself.",
+        "priceLabel": "Best for a growing business",
+        "features": [
+          "Multi-page site",
+          "Contact & inquiry forms",
+          "Simple admin panel for content",
+          "Email notifications on submissions",
+          "Basic SEO & analytics setup"
+        ],
+        "cta": "Get a quote"
+      },
+      {
+        "name": "Custom",
+        "description": "A fully custom build for complex needs — bespoke features, integrations, and scale.",
+        "priceLabel": "Best for advanced requirements",
+        "features": [
+          "Custom functionality & integrations",
+          "Accounts, bookings, or e-commerce",
+          "Scalable architecture",
+          "Ongoing support available",
+          "Scope & timeline tailored to you"
+        ],
+        "cta": "Discuss your project"
+      }
+    ]
+  },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. All rights reserved."
   }
