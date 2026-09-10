@@ -17,5 +17,8 @@
     "subtitle": "I design and build fast, easy-to-find websites for shops, trades, and local services — so people can find you, trust you, and get in touch.",
     "primaryCta": "Get a free quote",
     "secondaryCta": "See services"
+  },
+  "Footer": {
+    "copyright": "© {year} Kaiser Web Studio. All rights reserved."
   }
 }

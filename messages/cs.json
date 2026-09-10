@@ -17,5 +17,8 @@
     "subtitle": "Navrhuji a vytvářím rychlé a snadno dohledatelné webové stránky pro obchody, řemeslníky a místní služby — aby vás lidé našli, důvěřovali vám a ozvali se.",
     "primaryCta": "Nezávazná nabídka",
     "secondaryCta": "Zobrazit služby"
+  },
+  "Footer": {
+    "copyright": "© {year} Kaiser Web Studio. Všechna práva vyhrazena."
   }
 }

@@ -16,13 +16,8 @@ import {
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { navItems } from "@/lib/nav-items";
 import { cn } from "@/lib/utils";
-
-const navItems = [
-  { key: "about", href: "/about" },
-  { key: "services", href: "/services" },
-  { key: "contact", href: "/contact" },
-] as const;
 
 export function Navbar() {
   const t = useTranslations("Nav");
