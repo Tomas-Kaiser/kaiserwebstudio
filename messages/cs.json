@@ -18,6 +18,13 @@
     "primaryCta": "Nezávazná nabídka",
     "secondaryCta": "Zobrazit služby"
   },
+  "Showcase": {
+    "title": "Poslední práce",
+    "subtitle": "Ukázka webu, který jsem navrhl a vytvořil.",
+    "projectTitle": "Jan Hájek Photography",
+    "projectDescription": "Portfoliový web pro profesionálního fotografa s administrací pro správu alb a fotek.",
+    "cta": "Navštívit web"
+  },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. Všechna práva vyhrazena."
   }

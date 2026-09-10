@@ -18,6 +18,13 @@
     "primaryCta": "Get a free quote",
     "secondaryCta": "See services"
   },
+  "Showcase": {
+    "title": "Recent work",
+    "subtitle": "A look at a site I've designed and built.",
+    "projectTitle": "Jan Hájek Photography",
+    "projectDescription": "A portfolio site for a professional photographer, with an admin area for managing albums and photos.",
+    "cta": "Visit site"
+  },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. All rights reserved."
   }
