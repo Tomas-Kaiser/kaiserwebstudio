@@ -1,12 +1,12 @@
 # Kaiser Web Studio
 
-Marketing website for Kaiser Web Studio — a solo web design and development studio building affordable, effective websites for local small businesses.
+Marketing website for Kaiser Web Studio — a solo web design and development studio building fast, effective websites for growing businesses.
 
 **Website:** [kaiserwebstudio.com](https://kaiserwebstudio.com)
 
 ## About
 
-Kaiser Web Studio helps local small businesses (shops, trades, restaurants, salons, clinics, and other service providers) get a professional web presence without the overhead of a large agency.
+Kaiser Web Studio helps businesses get a professional web presence without the overhead of a large agency.
 
 ## Tech Stack
 

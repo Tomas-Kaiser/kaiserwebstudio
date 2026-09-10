@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Kaiser Web Studio",
-    "description": "Tvorba webových stránek pro malé místní podniky."
+    "description": "Tvorba rychlých a moderních webových stránek pro rostoucí firmy."
   },
   "Nav": {
     "home": "Domů",
@@ -12,9 +12,9 @@
     "language": "Jazyk"
   },
   "Home": {
-    "eyebrow": "Tvorba webů pro místní podniky",
-    "title": "Web, který vám přivede více místních zákazníků",
-    "subtitle": "Navrhuji a vytvářím rychlé a snadno dohledatelné webové stránky pro obchody, řemeslníky a místní služby — aby vás lidé našli, důvěřovali vám a ozvali se.",
+    "eyebrow": "Tvorba a vývoj webových stránek",
+    "title": "Web, který vám přivede více zákazníků",
+    "subtitle": "Navrhuji a vytvářím rychlé a snadno dohledatelné webové stránky pro rostoucí firmy — aby vás lidé našli, důvěřovali vám a ozvali se.",
     "primaryCta": "Nezávazná nabídka",
     "secondaryCta": "Zobrazit služby"
   },

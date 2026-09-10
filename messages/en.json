@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Kaiser Web Studio",
-    "description": "Building websites for local small businesses."
+    "description": "Building fast, modern websites for growing businesses."
   },
   "Nav": {
     "home": "Home",
@@ -12,9 +12,9 @@
     "language": "Language"
   },
   "Home": {
-    "eyebrow": "Web design for local businesses",
-    "title": "A website that brings you more local customers",
-    "subtitle": "I design and build fast, easy-to-find websites for shops, trades, and local services — so people can find you, trust you, and get in touch.",
+    "eyebrow": "Web design & development",
+    "title": "A website that brings you more customers",
+    "subtitle": "I design and build fast, easy-to-find websites for growing businesses — so people can find you, trust you, and get in touch.",
     "primaryCta": "Get a free quote",
     "secondaryCta": "See services"
   },
