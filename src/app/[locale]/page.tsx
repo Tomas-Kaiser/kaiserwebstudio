@@ -10,29 +10,40 @@ export default function Home() {
 
   return (
     <main className="flex flex-1 flex-col">
-      <section className="flex flex-col items-center justify-center gap-6 px-4 py-24 text-center">
-        <Badge variant="secondary">{t("eyebrow")}</Badge>
+      <section className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-10 overflow-hidden px-4 pt-[30px] pb-14 sm:flex-row sm:items-center lg:gap-14 lg:overflow-visible lg:pt-0 lg:pb-16">
+        <Image
+          src="/images/hero-illustration.svg"
+          alt={t("imageAlt")}
+          width={800}
+          height={600}
+          priority
+          className="hidden sm:order-2 sm:block sm:w-[480px] sm:max-w-none sm:shrink-0 lg:w-full lg:max-w-2xl lg:min-w-0 lg:shrink lg:flex-1"
+        />
 
-        <h1 className="max-w-2xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-          {t("title")}
-        </h1>
+        <div className="flex flex-col items-center gap-6 text-center sm:order-1 sm:max-w-md sm:shrink-0 sm:translate-x-[40px] sm:items-start sm:text-left lg:translate-x-[100px]">
+          <Badge variant="secondary">{t("eyebrow")}</Badge>
 
-        <p className="max-w-xl text-muted-foreground sm:text-lg">
-          {t("subtitle")}
-        </p>
+          <h1 className="max-w-2xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
+            {t("title")}
+          </h1>
 
-        <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
-          <Button size="lg" nativeButton={false} render={<Link href="/contact" />}>
-            {t("primaryCta")}
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            nativeButton={false}
-            render={<Link href="/services" />}
-          >
-            {t("secondaryCta")}
-          </Button>
+          <p className="max-w-xl text-muted-foreground sm:text-lg">
+            {t("subtitle")}
+          </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2 lg:justify-start">
+            <Button size="lg" nativeButton={false} render={<Link href="/contact" />}>
+              {t("primaryCta")}
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              nativeButton={false}
+              render={<Link href="/services" />}
+            >
+              {t("secondaryCta")}
+            </Button>
+          </div>
         </div>
       </section>
 

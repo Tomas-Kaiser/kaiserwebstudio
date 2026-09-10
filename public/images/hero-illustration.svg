@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="blobGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#004b9b"/>
+      <stop offset="100%" stop-color="#6c44a4"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7ba3d9"/>
+      <stop offset="100%" stop-color="#93bde8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0d1218" flood-opacity="0.10"/>
+    </filter>
+    <filter id="smallShadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0d1218" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- ambient background blobs -->
+  <circle cx="150" cy="120" r="180" fill="url(#blobGrad)" opacity="0.09"/>
+  <circle cx="660" cy="470" r="220" fill="url(#blobGrad)" opacity="0.07"/>
+
+  <!-- dashed path: search -> site -->
+  <path d="M 640 150 C 560 170, 500 190, 430 200" stroke="#a98fcb" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- browser window -->
+  <g filter="url(#softShadow)">
+    <rect x="120" y="110" width="560" height="380" rx="20" fill="#ffffff"/>
+  </g>
+  <path d="M120 130a20 20 0 0 1 20-20h520a20 20 0 0 1 20 20v34H120z" fill="#f6f5f2"/>
+  <circle cx="146" cy="147" r="6" fill="#e0574f" opacity="0.55"/>
+  <circle cx="166" cy="147" r="6" fill="#ccac16" opacity="0.55"/>
+  <circle cx="186" cy="147" r="6" fill="#094024" opacity="0.4"/>
+  <rect x="330" y="139" width="160" height="16" rx="8" fill="#ffffff"/>
+
+  <!-- nav row -->
+  <circle cx="150" cy="188" r="7" fill="#8fb4e6"/>
+  <rect x="166" y="184" width="48" height="8" rx="4" fill="#e2e0da"/>
+  <rect x="560" y="180" width="80" height="18" rx="9" fill="#8fb4e6"/>
+  <rect x="490" y="184" width="48" height="8" rx="4" fill="#e2e0da"/>
+  <rect x="420" y="184" width="48" height="8" rx="4" fill="#e2e0da"/>
+
+  <!-- hero copy block -->
+  <rect x="150" y="226" width="100" height="18" rx="9" fill="#ccac16" opacity="0.25"/>
+  <rect x="150" y="256" width="300" height="16" rx="8" fill="#c2c4c9"/>
+  <rect x="150" y="280" width="220" height="16" rx="8" fill="#c2c4c9"/>
+  <rect x="150" y="308" width="260" height="9" rx="4.5" fill="#e2e0da"/>
+  <rect x="150" y="324" width="180" height="9" rx="4.5" fill="#e2e0da"/>
+
+  <rect x="150" y="352" width="118" height="30" rx="15" fill="url(#btnGrad)"/>
+  <rect x="278" y="352" width="104" height="30" rx="15" fill="none" stroke="#e2e0da" stroke-width="2"/>
+
+  <!-- content cards row -->
+  <g>
+    <rect x="150" y="408" width="150" height="60" rx="10" fill="#f8f7f4"/>
+    <rect x="164" y="420" width="40" height="8" rx="4" fill="#8fb4e6"/>
+    <rect x="164" y="436" width="100" height="7" rx="3.5" fill="#e2e0da"/>
+    <rect x="164" y="448" width="70" height="7" rx="3.5" fill="#e2e0da"/>
+  </g>
+  <g>
+    <rect x="315" y="408" width="150" height="60" rx="10" fill="#f8f7f4"/>
+    <rect x="329" y="420" width="40" height="8" rx="4" fill="#8fbfa4"/>
+    <rect x="329" y="436" width="100" height="7" rx="3.5" fill="#e2e0da"/>
+    <rect x="329" y="448" width="70" height="7" rx="3.5" fill="#e2e0da"/>
+  </g>
+  <g>
+    <rect x="480" y="408" width="150" height="60" rx="10" fill="#f8f7f4"/>
+    <rect x="494" y="420" width="40" height="8" rx="4" fill="#c3aee0"/>
+    <rect x="494" y="436" width="100" height="7" rx="3.5" fill="#e2e0da"/>
+    <rect x="494" y="448" width="70" height="7" rx="3.5" fill="#e2e0da"/>
+  </g>
+
+  <!-- floating: search / findability -->
+  <g filter="url(#smallShadow)" transform="translate(636,86) rotate(8)" opacity="0.85">
+    <circle cx="0" cy="0" r="34" fill="#ffffff"/>
+    <circle cx="-4" cy="-4" r="11" fill="none" stroke="#a98fcb" stroke-width="4"/>
+    <line x1="5" y1="5" x2="13" y2="13" stroke="#a98fcb" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- floating: growth chart -->
+  <g filter="url(#smallShadow)" transform="translate(112,470)" opacity="0.85">
+    <rect x="-44" y="-34" width="88" height="68" rx="14" fill="#ffffff"/>
+    <rect x="-26" y="6" width="10" height="14" rx="2" fill="#8fbfa4" opacity="0.4"/>
+    <rect x="-10" y="-4" width="10" height="24" rx="2" fill="#8fbfa4" opacity="0.65"/>
+    <rect x="6" y="-14" width="10" height="34" rx="2" fill="#6ea187"/>
+    <path d="M -26 -8 L -6 -18 L 12 -26" stroke="#6ea187" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 4 -26 L 12 -26 L 12 -18" stroke="#6ea187" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- floating: trust / message check -->
+  <g filter="url(#smallShadow)" transform="translate(672,392)" opacity="0.85">
+    <circle cx="0" cy="0" r="28" fill="#8fb4e6"/>
+    <path d="M -10 0 L -3 8 L 11 -9" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- decorative dots -->
+  <circle cx="200" cy="80" r="6" fill="#ccac16" opacity="0.55"/>
+  <circle cx="700" cy="250" r="5" fill="#a98fcb" opacity="0.45"/>
+  <circle cx="96" cy="330" r="5" fill="#8fb4e6" opacity="0.4"/>
+  <circle cx="600" cy="540" r="7" fill="#8fbfa4" opacity="0.4"/>
+</svg>
