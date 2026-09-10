@@ -7,7 +7,7 @@ export function Footer() {
   const tFooter = useTranslations("Footer");
 
   return (
-    <footer className="border-t border-border">
+    <footer className="border-t border-border bg-secondary">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-10 text-center">
         <Link href="/" className="font-semibold">
           Kaiser Web Studio
