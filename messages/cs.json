@@ -72,6 +72,41 @@
       }
     ]
   },
+  "Services": {
+    "eyebrow": "Služby",
+    "title": "Vše, co potřebujete ke spuštění a růstu online",
+    "subtitle": "Od jednoduché vstupní stránky až po zcela individuální platformu — tohle umím postavit.",
+    "items": [
+      {
+        "name": "Návrh webu",
+        "description": "Čistý, moderní design přizpůsobený vaší značce a zákazníkům."
+      },
+      {
+        "name": "Vývoj",
+        "description": "Rychlé, responzivní a SEO přívětivé weby postavené na moderních technologiích."
+      },
+      {
+        "name": "Formuláře a administrace",
+        "description": "Kontaktní a poptávkové formuláře s jednoduchou administrací pro správu poptávek a obsahu."
+      },
+      {
+        "name": "Vlastní webové aplikace",
+        "description": "Funkce na míru — rezervace, uživatelské účty, integrace nebo e-shop."
+      },
+      {
+        "name": "SEO a analytika",
+        "description": "Základní on-page SEO a nastavení analytiky, abyste viděli, co funguje."
+      },
+      {
+        "name": "Průběžná podpora",
+        "description": "Aktualizace, opravy a drobné úpravy po spuštění, kdykoliv je potřeba."
+      }
+    ],
+    "ctaTitle": "Nevíte, co přesně potřebujete?",
+    "ctaSubtitle": "Řekněte mi o svém podnikání a doporučím vám vhodný výchozí bod.",
+    "ctaPrimary": "Ozvěte se mi",
+    "ctaSecondary": "Zobrazit balíčky"
+  },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. Všechna práva vyhrazena."
   }

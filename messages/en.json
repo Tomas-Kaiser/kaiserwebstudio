@@ -72,6 +72,41 @@
       }
     ]
   },
+  "Services": {
+    "eyebrow": "Services",
+    "title": "Everything you need to launch and grow online",
+    "subtitle": "From a single landing page to a fully custom platform — here's what I build.",
+    "items": [
+      {
+        "name": "Web design",
+        "description": "Clean, modern designs tailored to your brand and your customers."
+      },
+      {
+        "name": "Development",
+        "description": "Fast, responsive, SEO-friendly websites built with modern tools."
+      },
+      {
+        "name": "Forms & admin panels",
+        "description": "Contact and inquiry forms with a simple panel to manage submissions and content."
+      },
+      {
+        "name": "Custom web apps",
+        "description": "Bespoke functionality — bookings, accounts, integrations, or e-commerce."
+      },
+      {
+        "name": "SEO & analytics",
+        "description": "On-page SEO basics and analytics setup so you can see what's working."
+      },
+      {
+        "name": "Ongoing support",
+        "description": "Updates, fixes, and small changes after launch, whenever you need them."
+      }
+    ],
+    "ctaTitle": "Not sure what you need?",
+    "ctaSubtitle": "Tell me about your business and I'll recommend the right starting point.",
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "See packages"
+  },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. All rights reserved."
   }
