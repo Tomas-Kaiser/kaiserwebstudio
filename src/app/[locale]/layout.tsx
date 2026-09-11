@@ -6,7 +6,13 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { siteUrl } from "@/lib/site";
 import "../globals.css";
+
+const ogLocales: Record<string, string> = {
+  en: "en_US",
+  cs: "cs_CZ",
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,10 +31,32 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
+  const path = `/${locale}`;
 
   return {
+    metadataBase: new URL(siteUrl),
     title: t("title"),
     description: t("description"),
+    alternates: {
+      canonical: path,
+      languages: {
+        en: "/en",
+        cs: "/cs",
+      },
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      siteName: t("title"),
+      url: path,
+      locale: ogLocales[locale],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+    },
   };
 }
 
