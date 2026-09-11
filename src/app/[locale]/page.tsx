@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-1 flex-col">
-      <section className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-10 overflow-hidden px-4 pt-[30px] pb-14 sm:flex-row sm:items-center lg:gap-14 lg:overflow-visible lg:pt-0 lg:pb-16">
+      <section className="relative mx-auto flex min-h-[calc(100dvh-3.5rem)] w-full max-w-7xl flex-col items-center justify-center gap-10 overflow-hidden px-4 py-14 sm:flex-row sm:items-center sm:justify-start lg:gap-14 lg:overflow-visible lg:py-16">
         <Image
           src="/images/hero-illustration.svg"
           alt={t("imageAlt")}
