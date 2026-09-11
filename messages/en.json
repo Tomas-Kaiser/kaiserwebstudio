@@ -72,6 +72,30 @@
       }
     ]
   },
+  "About": {
+    "eyebrow": "About me",
+    "title": "Hi, I'm Tomas — the engineer behind Kaiser Web Studio",
+    "intro": "I'm a software engineer with 6+ years of experience building web applications, and I've designed and built several websites for businesses looking to grow online. I aim to tailor every site to its specific purpose, with a clear message so visitors can quickly find what they're looking for. I care about writing clean, reliable code — and about technology in general. It's not just my job, it's something I'm genuinely passionate about.",
+    "photoAlt": "Portrait of Tomas, the software engineer behind Kaiser Web Studio",
+    "highlights": [
+      {
+        "title": "6+ years of experience",
+        "description": "Professional software engineering experience across a range of web projects."
+      },
+      {
+        "title": "Full-stack development",
+        "description": "From design and frontend to backend, forms, and admin panels."
+      },
+      {
+        "title": "A real passion for tech",
+        "description": "I enjoy learning new tools and staying current with the ever-changing web."
+      }
+    ],
+    "ctaTitle": "Let's build something together",
+    "ctaSubtitle": "Tell me about your business and I'll help you figure out the right approach.",
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "See services"
+  },
   "Services": {
     "eyebrow": "Services",
     "title": "Everything you need to launch and grow online",

@@ -72,6 +72,30 @@
       }
     ]
   },
+  "About": {
+    "eyebrow": "O mně",
+    "title": "Ahoj, jsem Tomáš — vývojář za Kaiser Web Studio",
+    "intro": "Jsem softwarový inženýr s více než 6 lety zkušeností s vývojem webových aplikací a navrhl i postavil jsem několik webů pro firmy, které chtějí růst online. Každý web se snažím přizpůsobit přesně jeho účelu, s jasným sdělením, aby na něm návštěvníci rychle našli to, co hledají. Záleží mi na čistém a spolehlivém kódu — a technologiím se věnuji s opravdovým nadšením. Není to pro mě jen práce, ale skutečná vášeň.",
+    "photoAlt": "Portrét Tomáše, vývojáře za Kaiser Web Studio",
+    "highlights": [
+      {
+        "title": "6+ let zkušeností",
+        "description": "Profesionální zkušenosti s vývojem softwaru napříč řadou webových projektů."
+      },
+      {
+        "title": "Full-stack vývoj",
+        "description": "Od designu a frontendu až po backend, formuláře a administraci."
+      },
+      {
+        "title": "Opravdové nadšení pro technologie",
+        "description": "Rád se učím nové nástroje a sleduji, kam se web posouvá."
+      }
+    ],
+    "ctaTitle": "Pojďme spolu něco postavit",
+    "ctaSubtitle": "Řekněte mi o svém podnikání a pomůžu vám najít správný postup.",
+    "ctaPrimary": "Ozvěte se mi",
+    "ctaSecondary": "Zobrazit služby"
+  },
   "Services": {
     "eyebrow": "Služby",
     "title": "Vše, co potřebujete ke spuštění a růstu online",
