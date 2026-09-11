@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-border px-4 py-20">
+      <section className="bg-muted/30 px-4 py-20">
         <div className="mx-auto max-w-4xl">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight">
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="packages" className="border-t border-border px-4 py-20">
+      <section id="packages" className="bg-background px-4 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight">
