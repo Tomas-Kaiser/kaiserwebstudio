@@ -26,6 +26,18 @@
     "projectDescription": "Portfoliový web pro profesionálního fotografa s administrací pro správu alb a fotek.",
     "cta": "Navštívit web"
   },
+  "Testimonials": {
+    "eyebrow": "Reference",
+    "title": "Co říkají klienti",
+    "subtitle": "Reference od klientů",
+    "items": [
+      {
+        "quote": "Fantastický zážitek! Web hajekjan.com vypadá naprosto skvěle. Komunikace byla v každém kroku perfektní a celý proces probíhal hladce a příjemně. Vřele doporučuji!",
+        "name": "Jan Hájek",
+        "role": "Fotografický web / Firma"
+      }
+    ]
+  },
   "Packages": {
     "title": "Balíčky",
     "subtitle": "Tři výchozí body — každý projekt přizpůsobím tomu, co vaše firma skutečně potřebuje.",

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Check } from "lucide-react";
+import { Check, Quote } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -22,9 +22,26 @@ type PackageTier = {
   cta: string;
 };
 
+type Testimonial = {
+  quote: string;
+  name: string;
+  role: string;
+};
+
+function getInitials(name: string) {
+  return name
+    .split(" ")
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+}
+
 export default function Home() {
   const t = useTranslations("Home");
   const tShowcase = useTranslations("Showcase");
+  const tTestimonials = useTranslations("Testimonials");
+  const testimonials = tTestimonials.raw("items") as Testimonial[];
   const tPackages = useTranslations("Packages");
   const tiers = tPackages.raw("tiers") as PackageTier[];
 
@@ -185,6 +202,56 @@ export default function Home() {
                   </CardContent>
                 </Card>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-muted/30 px-4 py-20">
+        <div className="mx-auto max-w-5xl">
+          <div className="mx-auto max-w-xl text-center">
+            <Badge variant="secondary">{tTestimonials("eyebrow")}</Badge>
+
+            <h2 className="mt-6 text-3xl font-semibold tracking-tight">
+              {tTestimonials("title")}
+            </h2>
+            <p className="mt-3 text-muted-foreground">
+              {tTestimonials("subtitle")}
+            </p>
+          </div>
+
+          <div
+            className={cn(
+              "mt-12 grid gap-6",
+              testimonials.length === 1
+                ? "mx-auto max-w-xl"
+                : "sm:grid-cols-3"
+            )}
+          >
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="h-full">
+                <CardContent className="flex h-full flex-col gap-4 pt-6">
+                  <Quote className="size-5 text-primary/50" />
+
+                  <p className="flex-1 text-sm text-muted-foreground italic">
+                    &ldquo;{testimonial.quote}&rdquo;
+                  </p>
+
+                  <div className="flex items-center gap-3">
+                    <div className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-medium text-primary">
+                      {getInitials(testimonial.name)}
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium">
+                        {testimonial.name}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        {testimonial.role}
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>

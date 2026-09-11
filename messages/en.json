@@ -26,6 +26,18 @@
     "projectDescription": "A portfolio site for a professional photographer, with an admin area for managing albums and photos.",
     "cta": "Visit site"
   },
+  "Testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What clients say",
+    "subtitle": "Client testimonials",
+    "items": [
+      {
+        "quote": "Fantastic experience! The website hajekjan.com looks absolutely stunning. Communication was perfect at every step, and the entire process was smooth and enjoyable. Highly recommended!",
+        "name": "Jan Hájek",
+        "role": "Photography Site / Business"
+      }
+    ]
+  },
   "Packages": {
     "title": "Packages",
     "subtitle": "Three starting points — every project is scoped to what your business actually needs.",
