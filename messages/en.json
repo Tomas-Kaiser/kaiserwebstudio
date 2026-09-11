@@ -131,6 +131,24 @@
     "ctaPrimary": "Get in touch",
     "ctaSecondary": "See packages"
   },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk about your project",
+    "subtitle": "Tell me a bit about what you need and I'll get back to you soon.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me about your business and what you're looking for...",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "successTitle": "Message sent",
+    "successMessage": "Thanks for reaching out — I'll get back to you soon.",
+    "errorMissing": "Please fill in all fields.",
+    "errorInvalidEmail": "Please enter a valid email address.",
+    "errorSend": "Something went wrong. Please try again or email me directly."
+  },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. All rights reserved."
   }

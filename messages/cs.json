@@ -131,6 +131,24 @@
     "ctaPrimary": "Ozvěte se mi",
     "ctaSecondary": "Zobrazit balíčky"
   },
+  "Contact": {
+    "eyebrow": "Kontakt",
+    "title": "Pojďme probrat váš projekt",
+    "subtitle": "Napište mi pár slov o tom, co potřebujete, a brzy se vám ozvu.",
+    "nameLabel": "Jméno",
+    "namePlaceholder": "Vaše jméno",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "vy@priklad.cz",
+    "messageLabel": "Zpráva",
+    "messagePlaceholder": "Napište mi o svém podnikání a co hledáte...",
+    "submit": "Odeslat zprávu",
+    "sending": "Odesílám...",
+    "successTitle": "Zpráva odeslána",
+    "successMessage": "Díky za zprávu — brzy se vám ozvu.",
+    "errorMissing": "Vyplňte prosím všechna pole.",
+    "errorInvalidEmail": "Zadejte prosím platnou e-mailovou adresu.",
+    "errorSend": "Něco se pokazilo. Zkuste to prosím znovu, nebo mi napište přímo e-mailem."
+  },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. Všechna práva vyhrazena."
   }
