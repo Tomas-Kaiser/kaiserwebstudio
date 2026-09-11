@@ -184,7 +184,88 @@
     "errorInvalidEmail": "Please enter a valid email address.",
     "errorSend": "Something went wrong. Please try again or email me directly."
   },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: September 2026",
+    "intro": "This Privacy Policy explains what personal data Kaiser Web Studio collects through this website, why, and what rights you have over it. This site is operated by Tomas Kaiser from the Czech Republic, so the EU General Data Protection Regulation (GDPR) applies.",
+    "sections": [
+      {
+        "heading": "Who is responsible for your data",
+        "paragraphs": [
+          "The data controller for this website is Tomas Kaiser, trading as Kaiser Web Studio.",
+          "You can reach me about any privacy question at tomas.kaiser.dev@gmail.com."
+        ]
+      },
+      {
+        "heading": "What data I collect",
+        "paragraphs": [
+          "The only personal data this site collects is what you submit yourself through the contact form: your name, email address, and the message you write.",
+          "I don't use analytics, tracking pixels, or advertising cookies anywhere on this site, and I don't collect any data automatically beyond what's described below under \"Cookies\"."
+        ]
+      },
+      {
+        "heading": "Why I collect it and the legal basis",
+        "paragraphs": [
+          "I use your contact form submission solely to respond to your inquiry and, if we move forward, to discuss and deliver a web development project.",
+          "The legal basis for this processing is Article 6(1)(b) GDPR (steps necessary prior to entering into a contract with you) or, where no contract follows, Article 6(1)(f) GDPR (my legitimate interest in responding to business inquiries)."
+        ]
+      },
+      {
+        "heading": "How your message is handled",
+        "paragraphs": [
+          "When you submit the contact form, your name, email, and message are sent by email using Resend, a transactional email service, and delivered directly to my own inbox. I reply to you directly from there.",
+          "This website does not store your submission in any database — once the email is sent, the site itself keeps no copy. The message lives on in my email inbox for as long as I need it to handle our conversation, or until I delete it."
+        ]
+      },
+      {
+        "heading": "Who else sees your data",
+        "paragraphs": [
+          "Resend (resend.com) processes your message briefly in order to deliver it to me by email, acting as a data processor. Resend's infrastructure may process data outside the European Economic Area; where that happens, Resend relies on appropriate safeguards such as Standard Contractual Clauses.",
+          "Your message is also stored in my personal email provider's mailbox (Gmail, operated by Google) once delivered, since that's where I read and reply to it.",
+          "I don't sell, rent, or share your data with anyone else, and I don't use it for advertising."
+        ]
+      },
+      {
+        "heading": "Cookies",
+        "paragraphs": [
+          "This site sets one cookie, NEXT_LOCALE, purely to remember whether you're viewing the site in English or Czech. It doesn't track you, identify you, or get shared with anyone — it's strictly functional.",
+          "This site does not use analytics or advertising cookies of any kind."
+        ]
+      },
+      {
+        "heading": "How long I keep your data",
+        "paragraphs": [
+          "I keep contact form emails for as long as reasonably necessary to respond to you and, if we work together, for the duration of our business relationship plus a reasonable period afterward for record-keeping. You can ask me to delete your message at any time (see \"Your rights\" below)."
+        ]
+      },
+      {
+        "heading": "Your rights",
+        "paragraphs": [
+          "Access the personal data I hold about you",
+          "Ask me to correct inaccurate data",
+          "Ask me to delete your data",
+          "Object to or restrict how I use your data",
+          "Ask for a copy of your data in a portable format",
+          "Withdraw consent at any time, where processing is based on consent",
+          "Lodge a complaint with the Czech Office for Personal Data Protection (Úřad pro ochranu osobních údajů, uoou.cz), or your own country's supervisory authority"
+        ]
+      },
+      {
+        "heading": "Changes to this policy",
+        "paragraphs": [
+          "I may update this policy if the site's data practices change — for example, if I add analytics in the future. The \"last updated\" date at the top will reflect the most recent revision."
+        ]
+      },
+      {
+        "heading": "Contact",
+        "paragraphs": [
+          "For any question about this policy or your data, email tomas.kaiser.dev@gmail.com."
+        ]
+      }
+    ]
+  },
   "Footer": {
-    "copyright": "© {year} Kaiser Web Studio. All rights reserved."
+    "copyright": "© {year} Kaiser Web Studio. All rights reserved.",
+    "privacyLink": "Privacy Policy"
   }
 }

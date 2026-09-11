@@ -184,7 +184,88 @@
     "errorInvalidEmail": "Zadejte prosím platnou e-mailovou adresu.",
     "errorSend": "Něco se pokazilo. Zkuste to prosím znovu, nebo mi napište přímo e-mailem."
   },
+  "Privacy": {
+    "title": "Zásady ochrany osobních údajů",
+    "updated": "Poslední aktualizace: září 2026",
+    "intro": "Tyto zásady ochrany osobních údajů vysvětlují, jaké osobní údaje Kaiser Web Studio prostřednictvím tohoto webu shromažďuje, proč, a jaká máte práva. Tento web provozuje Tomáš Kaiser z České republiky, proto se na zpracování vztahuje Obecné nařízení o ochraně osobních údajů (GDPR).",
+    "sections": [
+      {
+        "heading": "Kdo odpovídá za vaše údaje",
+        "paragraphs": [
+          "Správcem osobních údajů na tomto webu je Tomáš Kaiser, provozující Kaiser Web Studio.",
+          "S jakýmkoli dotazem ohledně ochrany osobních údajů se na mě můžete obrátit na tomas.kaiser.dev@gmail.com."
+        ]
+      },
+      {
+        "heading": "Jaké údaje shromažďuji",
+        "paragraphs": [
+          "Jediné osobní údaje, které tento web shromažďuje, jsou ty, které sami zadáte do kontaktního formuláře: jméno, e-mailovou adresu a zprávu.",
+          "Na tomto webu nepoužívám analytiku, sledovací pixely ani reklamní cookies a mimo níže popsané cookies nesbírám žádné údaje automaticky."
+        ]
+      },
+      {
+        "heading": "Proč údaje zpracovávám a právní základ",
+        "paragraphs": [
+          "Vaši zprávu z kontaktního formuláře používám výhradně k tomu, abych vám odpověděl, a pokud budeme spolupracovat, k projednání a realizaci webového projektu.",
+          "Právním základem zpracování je čl. 6 odst. 1 písm. b) GDPR (kroky nezbytné před uzavřením smlouvy), případně, pokud smlouva nevznikne, čl. 6 odst. 1 písm. f) GDPR (můj oprávněný zájem na zodpovězení obchodních poptávek)."
+        ]
+      },
+      {
+        "heading": "Jak se zprávou nakládám",
+        "paragraphs": [
+          "Po odeslání kontaktního formuláře je vaše jméno, e-mail a zpráva odeslána e-mailem prostřednictvím služby Resend a doručena přímo do mé e-mailové schránky. Odpovídám vám přímo z ní.",
+          "Tento web žádné odeslané údaje neukládá do žádné databáze — jakmile je e-mail odeslán, web sám o sobě žádnou kopii neuchovává. Zpráva zůstává v mé e-mailové schránce po dobu, po kterou ji potřebuji k řešení naší komunikace, nebo dokud ji nesmažu."
+        ]
+      },
+      {
+        "heading": "Kdo další má k vašim údajům přístup",
+        "paragraphs": [
+          "Služba Resend (resend.com) krátce zpracuje vaši zprávu za účelem jejího doručení na můj e-mail, a to jako zpracovatel osobních údajů. Infrastruktura Resend může zpracovávat údaje i mimo Evropský hospodářský prostor; v takovém případě Resend spoléhá na vhodné záruky, jako jsou standardní smluvní doložky.",
+          "Po doručení je vaše zpráva uložena také v mé osobní e-mailové schránce (Gmail, provozované společností Google), protože tam zprávu čtu a odpovídám na ni.",
+          "Vaše údaje nikomu neprodávám, nepronajímám ani nesdílím a nepoužívám je k reklamě."
+        ]
+      },
+      {
+        "heading": "Cookies",
+        "paragraphs": [
+          "Tento web nastavuje jedinou cookie, NEXT_LOCALE, a to výhradně za účelem uložení, zda si zobrazujete web v češtině nebo angličtině. Nijak vás nesleduje, neidentifikuje ani nesdílí s nikým dalším — je čistě funkční.",
+          "Tento web nepoužívá žádné analytické ani reklamní cookies."
+        ]
+      },
+      {
+        "heading": "Jak dlouho údaje uchovávám",
+        "paragraphs": [
+          "E-maily z kontaktního formuláře uchovávám po dobu přiměřeně nezbytnou k tomu, abych vám odpověděl, a pokud budeme spolupracovat, po dobu našeho obchodního vztahu a ještě přiměřenou dobu poté pro účely evidence. O výmaz své zprávy můžete kdykoli požádat (viz „Vaše práva“ níže)."
+        ]
+      },
+      {
+        "heading": "Vaše práva",
+        "paragraphs": [
+          "Přístup k osobním údajům, které o vás zpracovávám",
+          "Požádat o opravu nepřesných údajů",
+          "Požádat o výmaz svých údajů",
+          "Vznést námitku proti zpracování nebo požádat o jeho omezení",
+          "Požádat o kopii svých údajů ve strojově čitelném formátu",
+          "Kdykoli odvolat souhlas, pokud je zpracování založeno na souhlasu",
+          "Podat stížnost u Úřadu pro ochranu osobních údajů (uoou.cz), nebo u dozorového úřadu ve své zemi"
+        ]
+      },
+      {
+        "heading": "Změny těchto zásad",
+        "paragraphs": [
+          "Tyto zásady mohu aktualizovat, pokud se změní způsob, jakým s údaji na webu nakládám — například pokud v budoucnu přidám analytiku. Datum „poslední aktualizace“ v úvodu odráží nejnovější revizi."
+        ]
+      },
+      {
+        "heading": "Kontakt",
+        "paragraphs": [
+          "S jakýmkoli dotazem ohledně těchto zásad nebo svých údajů mě kontaktujte na tomas.kaiser.dev@gmail.com."
+        ]
+      }
+    ]
+  },
   "Footer": {
-    "copyright": "© {year} Kaiser Web Studio. Všechna práva vyhrazena."
+    "copyright": "© {year} Kaiser Web Studio. Všechna práva vyhrazena.",
+    "privacyLink": "Ochrana osobních údajů"
   }
 }

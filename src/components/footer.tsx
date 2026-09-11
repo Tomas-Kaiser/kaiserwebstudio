@@ -28,6 +28,13 @@ export function Footer() {
         <p className="text-xs text-muted-foreground">
           {tFooter("copyright", { year: new Date().getFullYear() })}
         </p>
+
+        <Link
+          href="/privacy"
+          className="text-xs text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
+        >
+          {tFooter("privacyLink")}
+        </Link>
       </div>
     </footer>
   );
