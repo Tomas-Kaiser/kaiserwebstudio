@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Check, Quote } from "lucide-react";
+import { ArrowRight, Check, Quote } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -28,6 +28,11 @@ type Testimonial = {
   role: string;
 };
 
+type ProcessStep = {
+  title: string;
+  description: string;
+};
+
 function getInitials(name: string) {
   return name
     .split(" ")
@@ -40,6 +45,8 @@ function getInitials(name: string) {
 export default function Home() {
   const t = useTranslations("Home");
   const tShowcase = useTranslations("Showcase");
+  const tProcess = useTranslations("Process");
+  const steps = tProcess.raw("steps") as ProcessStep[];
   const tTestimonials = useTranslations("Testimonials");
   const testimonials = tTestimonials.raw("items") as Testimonial[];
   const tPackages = useTranslations("Packages");
@@ -146,7 +153,53 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="packages" className="bg-background px-4 py-20">
+      <section className="bg-background px-4 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-xl text-center">
+            <Badge variant="secondary">{tProcess("eyebrow")}</Badge>
+
+            <h2 className="mt-6 text-3xl font-semibold tracking-tight">
+              {tProcess("title")}
+            </h2>
+            <p className="mt-3 text-muted-foreground">
+              {tProcess("subtitle")}
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {steps.map((step, index) => (
+              <div key={step.title} className="relative flex flex-col items-center gap-3 text-center">
+                <div className="relative flex size-12 items-center justify-center">
+                  <svg viewBox="0 0 48 48" className="absolute inset-0 size-full text-primary">
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="22"
+                      fill="currentColor"
+                      fillOpacity="0.1"
+                      stroke="currentColor"
+                      strokeOpacity="0.25"
+                    />
+                  </svg>
+                  <span className="text-base font-semibold text-primary">
+                    {index + 1}
+                  </span>
+                </div>
+                <h3 className="text-lg font-medium">{step.title}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {step.description}
+                </p>
+
+                {index < steps.length - 1 && (
+                  <ArrowRight className="absolute top-6 -right-4 hidden size-5 -translate-y-1/2 text-muted-foreground/50 lg:block" />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="packages" className="bg-muted/30 px-4 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight">
@@ -207,7 +260,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-muted/30 px-4 py-20">
+      <section className="bg-background px-4 py-20">
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-xl text-center">
             <Badge variant="secondary">{tTestimonials("eyebrow")}</Badge>

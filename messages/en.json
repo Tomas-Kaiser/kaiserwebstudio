@@ -26,6 +26,29 @@
     "projectDescription": "A portfolio site for a professional photographer, with an admin area for managing albums and photos.",
     "cta": "Visit site"
   },
+  "Process": {
+    "eyebrow": "How I work",
+    "title": "A simple, no-surprises process",
+    "subtitle": "From first message to launch — here's what working together looks like.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "description": "We talk about your business, goals, and what your site needs to do."
+      },
+      {
+        "title": "Design",
+        "description": "I put together a design tailored to your brand and your customers."
+      },
+      {
+        "title": "Build",
+        "description": "I develop the site, test it thoroughly, and share progress along the way."
+      },
+      {
+        "title": "Launch",
+        "description": "Your site goes live, and I'm on hand for support after that."
+      }
+    ]
+  },
   "Testimonials": {
     "eyebrow": "Testimonials",
     "title": "What clients say",

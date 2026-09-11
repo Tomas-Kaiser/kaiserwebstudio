@@ -26,6 +26,29 @@
     "projectDescription": "Portfoliový web pro profesionálního fotografa s administrací pro správu alb a fotek.",
     "cta": "Navštívit web"
   },
+  "Process": {
+    "eyebrow": "Jak pracuji",
+    "title": "Jednoduchý proces bez překvapení",
+    "subtitle": "Od první zprávy až po spuštění — takto vypadá naše spolupráce.",
+    "steps": [
+      {
+        "title": "Konzultace",
+        "description": "Probereme vaše podnikání, cíle a co má váš web zvládat."
+      },
+      {
+        "title": "Návrh",
+        "description": "Připravím design na míru vaší značce a zákazníkům."
+      },
+      {
+        "title": "Vývoj",
+        "description": "Web vyvinu, důkladně otestuji a průběžně vás budu informovat o postupu."
+      },
+      {
+        "title": "Spuštění",
+        "description": "Web spustíme a jsem k dispozici i po jeho startu."
+      }
+    ]
+  },
   "Testimonials": {
     "eyebrow": "Reference",
     "title": "Co říkají klienti",
