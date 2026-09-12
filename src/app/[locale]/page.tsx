@@ -283,7 +283,7 @@ export default function Home() {
           >
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="h-full">
-                <CardContent className="flex h-full flex-col gap-4 pt-6">
+                <CardContent className="flex h-full flex-col gap-4 pt-2">
                   <Quote className="size-5 text-primary/50" />
 
                   <p className="flex-1 text-sm text-muted-foreground italic">
