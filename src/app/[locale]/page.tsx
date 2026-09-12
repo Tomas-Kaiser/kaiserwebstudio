@@ -33,6 +33,103 @@ type ProcessStep = {
   description: string;
 };
 
+function MobileHeroAccent({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 160 120"
+      aria-hidden="true"
+      className={cn("pointer-events-none", className)}
+    >
+      <defs>
+        <linearGradient
+          id="mobileHeroBlob"
+          x1="0"
+          y1="0"
+          x2="1"
+          y2="1"
+        >
+          <stop offset="0%" stopColor="#004b9b" />
+          <stop offset="100%" stopColor="#6c44a4" />
+        </linearGradient>
+      </defs>
+
+      <circle cx="80" cy="60" r="58" fill="url(#mobileHeroBlob)" opacity="0.12" />
+
+      <circle cx="24" cy="18" r="4" fill="#8fb4e6" opacity="0.6" />
+      <circle cx="140" cy="96" r="3" fill="#ccac16" opacity="0.5" />
+
+      <rect
+        x="30"
+        y="28"
+        width="100"
+        height="64"
+        rx="10"
+        fill="#ffffff"
+        opacity="0.9"
+      />
+      <path
+        d="M30 38a10 10 0 0 1 10-10h80a10 10 0 0 1 10 10v6H30z"
+        fill="#f6f5f2"
+        opacity="0.9"
+      />
+      <circle cx="40" cy="34" r="2.5" fill="#e0574f" opacity="0.6" />
+      <circle cx="48" cy="34" r="2.5" fill="#ccac16" opacity="0.6" />
+      <circle cx="56" cy="34" r="2.5" fill="#094024" opacity="0.45" />
+
+      <rect x="40" y="52" width="50" height="6" rx="3" fill="#e2e0da" />
+      <rect x="40" y="64" width="70" height="6" rx="3" fill="#e2e0da" />
+      <rect x="40" y="76" width="32" height="8" rx="4" fill="#8fb4e6" />
+    </svg>
+  );
+}
+
+function MobileComputerAccent({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 160 120"
+      aria-hidden="true"
+      className={cn("pointer-events-none", className)}
+    >
+      <defs>
+        <linearGradient
+          id="mobileComputerBlob"
+          x1="0"
+          y1="0"
+          x2="1"
+          y2="1"
+        >
+          <stop offset="0%" stopColor="#004b9b" />
+          <stop offset="100%" stopColor="#6c44a4" />
+        </linearGradient>
+      </defs>
+
+      <circle cx="80" cy="58" r="58" fill="url(#mobileComputerBlob)" opacity="0.12" />
+
+      <circle cx="26" cy="94" r="4" fill="#8fb4e6" opacity="0.6" />
+      <circle cx="136" cy="24" r="3" fill="#ccac16" opacity="0.5" />
+
+      {/* monitor */}
+      <rect
+        x="34"
+        y="22"
+        width="92"
+        height="62"
+        rx="8"
+        fill="#ffffff"
+        opacity="0.9"
+      />
+      <rect x="42" y="30" width="76" height="46" rx="4" fill="#f6f5f2" />
+      <rect x="50" y="38" width="40" height="6" rx="3" fill="#8fb4e6" />
+      <rect x="50" y="50" width="60" height="5" rx="2.5" fill="#e2e0da" />
+      <rect x="50" y="60" width="46" height="5" rx="2.5" fill="#e2e0da" />
+
+      {/* stand */}
+      <rect x="72" y="84" width="16" height="10" rx="2" fill="#ffffff" opacity="0.9" />
+      <rect x="58" y="94" width="44" height="7" rx="3.5" fill="#ffffff" opacity="0.9" />
+    </svg>
+  );
+}
+
 function getInitials(name: string) {
   return name
     .split(" ")
@@ -64,6 +161,8 @@ export default function Home() {
           className="hidden sm:order-2 sm:block sm:w-[480px] sm:max-w-none sm:shrink-0 lg:w-full lg:max-w-2xl lg:min-w-0 lg:shrink lg:flex-1"
         />
 
+        <MobileHeroAccent className="h-28 w-36 sm:hidden" />
+
         <div className="flex flex-col items-center gap-6 text-center sm:order-1 sm:max-w-md sm:shrink-0 sm:translate-x-[40px] sm:items-start sm:text-left lg:translate-x-[100px]">
           <Badge variant="secondary">{t("eyebrow")}</Badge>
 
@@ -89,6 +188,8 @@ export default function Home() {
             </Button>
           </div>
         </div>
+
+        <MobileComputerAccent className="h-28 w-36 sm:hidden" />
       </section>
 
       <section className="bg-muted/30 px-4 py-20">
