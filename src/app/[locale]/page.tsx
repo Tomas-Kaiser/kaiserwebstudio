@@ -217,7 +217,7 @@ export default function Home() {
                 src="/images/showcase/hajekjan-mobile.png"
                 alt={tShowcase("projectTitle")}
                 fill
-                className="object-cover object-[center_35%]"
+                className="object-cover object-[center_45%]"
               />
             </div>
             <Image
