@@ -264,6 +264,12 @@
       }
     ]
   },
+  "NotFound": {
+    "title": "Stránka nenalezena",
+    "description": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
+    "primaryCta": "Zpět na hlavní stránku",
+    "secondaryCta": "Kontaktujte mě"
+  },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. Všechna práva vyhrazena.",
     "privacyLink": "Ochrana osobních údajů"

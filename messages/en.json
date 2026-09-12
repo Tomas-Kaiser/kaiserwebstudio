@@ -264,6 +264,12 @@
       }
     ]
   },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or may have moved.",
+    "primaryCta": "Back to home",
+    "secondaryCta": "Contact me"
+  },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. All rights reserved.",
     "privacyLink": "Privacy Policy"
