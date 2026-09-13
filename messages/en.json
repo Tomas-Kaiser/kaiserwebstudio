@@ -200,7 +200,7 @@
         "heading": "What data I collect",
         "paragraphs": [
           "The only personal data this site collects is what you submit yourself through the contact form: your name, email address, and the message you write.",
-          "I don't use analytics, tracking pixels, or advertising cookies anywhere on this site, and I don't collect any data automatically beyond what's described below under \"Cookies\"."
+          "I use Vercel Web Analytics to see anonymized visit and page-view counts. It doesn't use cookies or track you individually, and I don't collect any other data automatically beyond what's described below under \"Cookies\"."
         ]
       },
       {
@@ -222,6 +222,7 @@
         "paragraphs": [
           "Resend (resend.com) processes your message briefly in order to deliver it to me by email, acting as a data processor. Resend's infrastructure may process data outside the European Economic Area; where that happens, Resend relies on appropriate safeguards such as Standard Contractual Clauses.",
           "Your message is also stored in my personal email provider's mailbox (Gmail, operated by Google) once delivered, since that's where I read and reply to it.",
+          "Vercel (vercel.com), who hosts this site, provides Web Analytics — anonymized visit and page-view counts, with no cookies and no personal identifiers, automatically discarded after 24 hours.",
           "I don't sell, rent, or share your data with anyone else, and I don't use it for advertising."
         ]
       },
@@ -229,7 +230,7 @@
         "heading": "Cookies",
         "paragraphs": [
           "This site sets one cookie, NEXT_LOCALE, purely to remember whether you're viewing the site in English or Czech. It doesn't track you, identify you, or get shared with anyone — it's strictly functional.",
-          "This site does not use analytics or advertising cookies of any kind."
+          "Vercel Web Analytics doesn't set any cookies either — it identifies visits anonymously per request rather than through anything stored on your device. This site does not use any advertising cookies."
         ]
       },
       {

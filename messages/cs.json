@@ -200,7 +200,7 @@
         "heading": "Jaké údaje shromažďuji",
         "paragraphs": [
           "Jediné osobní údaje, které tento web shromažďuje, jsou ty, které sami zadáte do kontaktního formuláře: jméno, e-mailovou adresu a zprávu.",
-          "Na tomto webu nepoužívám analytiku, sledovací pixely ani reklamní cookies a mimo níže popsané cookies nesbírám žádné údaje automaticky."
+          "Používám Vercel Web Analytics k zobrazení anonymizovaného počtu návštěv a zobrazení stránek. Nepoužívá cookies ani vás individuálně nesleduje a mimo níže popsané cookies nesbírám žádné další údaje automaticky."
         ]
       },
       {
@@ -222,6 +222,7 @@
         "paragraphs": [
           "Služba Resend (resend.com) krátce zpracuje vaši zprávu za účelem jejího doručení na můj e-mail, a to jako zpracovatel osobních údajů. Infrastruktura Resend může zpracovávat údaje i mimo Evropský hospodářský prostor; v takovém případě Resend spoléhá na vhodné záruky, jako jsou standardní smluvní doložky.",
           "Po doručení je vaše zpráva uložena také v mé osobní e-mailové schránce (Gmail, provozované společností Google), protože tam zprávu čtu a odpovídám na ni.",
+          "Společnost Vercel (vercel.com), která tento web hostuje, poskytuje službu Web Analytics — anonymizovaný počet návštěv a zobrazení stránek, bez cookies a bez osobních identifikátorů, automaticky mazaný po 24 hodinách.",
           "Vaše údaje nikomu neprodávám, nepronajímám ani nesdílím a nepoužívám je k reklamě."
         ]
       },
@@ -229,7 +230,7 @@
         "heading": "Cookies",
         "paragraphs": [
           "Tento web nastavuje jedinou cookie, NEXT_LOCALE, a to výhradně za účelem uložení, zda si zobrazujete web v češtině nebo angličtině. Nijak vás nesleduje, neidentifikuje ani nesdílí s nikým dalším — je čistě funkční.",
-          "Tento web nepoužívá žádné analytické ani reklamní cookies."
+          "Vercel Web Analytics také nenastavuje žádné cookies — návštěvy identifikuje anonymně na základě jednotlivého požadavku, nikoli pomocí něčeho uloženého ve vašem zařízení. Tento web nepoužívá žádné reklamní cookies."
         ]
       },
       {
