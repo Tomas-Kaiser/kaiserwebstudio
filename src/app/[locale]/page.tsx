@@ -83,53 +83,6 @@ function MobileHeroAccent({ className }: { className?: string }) {
   );
 }
 
-function MobileComputerAccent({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 160 120"
-      aria-hidden="true"
-      className={cn("pointer-events-none", className)}
-    >
-      <defs>
-        <linearGradient
-          id="mobileComputerBlob"
-          x1="0"
-          y1="0"
-          x2="1"
-          y2="1"
-        >
-          <stop offset="0%" stopColor="#004b9b" />
-          <stop offset="100%" stopColor="#6c44a4" />
-        </linearGradient>
-      </defs>
-
-      <circle cx="80" cy="58" r="58" fill="url(#mobileComputerBlob)" opacity="0.12" />
-
-      <circle cx="26" cy="94" r="4" fill="#8fb4e6" opacity="0.6" />
-      <circle cx="136" cy="24" r="3" fill="#ccac16" opacity="0.5" />
-
-      {/* monitor */}
-      <rect
-        x="34"
-        y="22"
-        width="92"
-        height="62"
-        rx="8"
-        fill="#ffffff"
-        opacity="0.9"
-      />
-      <rect x="42" y="30" width="76" height="46" rx="4" fill="#f6f5f2" />
-      <rect x="50" y="38" width="40" height="6" rx="3" fill="#8fb4e6" />
-      <rect x="50" y="50" width="60" height="5" rx="2.5" fill="#e2e0da" />
-      <rect x="50" y="60" width="46" height="5" rx="2.5" fill="#e2e0da" />
-
-      {/* stand */}
-      <rect x="72" y="84" width="16" height="10" rx="2" fill="#ffffff" opacity="0.9" />
-      <rect x="58" y="94" width="44" height="7" rx="3.5" fill="#ffffff" opacity="0.9" />
-    </svg>
-  );
-}
-
 function getInitials(name: string) {
   return name
     .split(" ")
@@ -188,8 +141,6 @@ export default function Home() {
             </Button>
           </div>
         </div>
-
-        <MobileComputerAccent className="h-28 w-36 sm:hidden" />
       </section>
 
       <section className="bg-muted/30 px-4 py-20">
