@@ -37,12 +37,12 @@ export default function ServicesPage() {
         </p>
       </section>
 
-      <section className="border-t border-border px-4 py-16">
+      <section className="bg-muted/30 px-4 py-16">
         <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, index) => {
             const Icon = icons[index];
             return (
-              <Card key={item.name}>
+              <Card key={item.name} className="ring-0 shadow-sm">
                 <CardHeader>
                   <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                     <Icon className="size-5" />
@@ -56,7 +56,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="border-t border-border px-4 py-16 text-center">
+      <section className="bg-background px-4 py-16 text-center">
         <h2 className="text-2xl font-semibold tracking-tight">
           {t("ctaTitle")}
         </h2>
