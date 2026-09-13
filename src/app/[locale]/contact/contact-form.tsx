@@ -79,7 +79,7 @@ export function ContactForm() {
         <Textarea
           id="message"
           name="message"
-          rows={8}
+          className="min-h-60"
           placeholder={t("messagePlaceholder")}
           required
         />
