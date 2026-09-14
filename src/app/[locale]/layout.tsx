@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -88,6 +89,7 @@ export default async function LocaleLayout({
           {children}
           <Footer />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
