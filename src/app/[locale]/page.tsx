@@ -33,6 +33,36 @@ type ProcessStep = {
   description: string;
 };
 
+type ShowcaseItem = {
+  projectTitle: string;
+  projectDescription: string;
+};
+
+type ShowcaseMeta = {
+  domain: string;
+  url: string;
+  desktopImage: string;
+  mobileImage: string;
+  mobilePosition: string;
+};
+
+const showcaseMeta: ShowcaseMeta[] = [
+  {
+    domain: "hajekjan.com",
+    url: "https://www.hajekjan.com",
+    desktopImage: "/images/showcase/hajekjan.png",
+    mobileImage: "/images/showcase/hajekjan-mobile.png",
+    mobilePosition: "center 45%",
+  },
+  {
+    domain: "ravenbooks-two.vercel.app",
+    url: "https://ravenbooks-two.vercel.app/",
+    desktopImage: "/images/showcase/storebook.png",
+    mobileImage: "/images/showcase/storebook-mobile.png",
+    mobilePosition: "center top",
+  },
+];
+
 function MobileHeroAccent({ className }: { className?: string }) {
   return (
     <svg
@@ -95,6 +125,7 @@ function getInitials(name: string) {
 export default function Home() {
   const t = useTranslations("Home");
   const tShowcase = useTranslations("Showcase");
+  const showcaseItems = tShowcase.raw("items") as ShowcaseItem[];
   const tProcess = useTranslations("Process");
   const steps = tProcess.raw("steps") as ProcessStep[];
   const tTestimonials = useTranslations("Testimonials");
@@ -154,53 +185,63 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-            <div className="flex items-center gap-1.5 border-b border-border bg-muted px-4 py-2.5">
-              <span className="h-2.5 w-2.5 rounded-full bg-destructive/40" />
-              <span className="h-2.5 w-2.5 rounded-full bg-brand-yellow/60" />
-              <span className="h-2.5 w-2.5 rounded-full bg-brand-green/50" />
-              <span className="ml-3 rounded-md bg-background px-3 py-1 text-xs text-muted-foreground">
-                hajekjan.com
-              </span>
-            </div>
-            <div className="relative aspect-[3/4] w-full overflow-hidden sm:hidden">
-              <Image
-                src="/images/showcase/hajekjan-mobile.png"
-                alt={tShowcase("projectTitle")}
-                fill
-                className="object-cover object-[center_45%]"
-              />
-            </div>
-            <Image
-              src="/images/showcase/hajekjan.png"
-              alt={tShowcase("projectTitle")}
-              width={1400}
-              height={900}
-              className="hidden w-full sm:block"
-            />
-          </div>
+          <div className="mt-12 flex flex-col gap-16">
+            {showcaseItems.map((item, index) => {
+              const meta = showcaseMeta[index];
+              return (
+                <div key={item.projectTitle}>
+                  <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+                    <div className="flex items-center gap-1.5 border-b border-border bg-muted px-4 py-2.5">
+                      <span className="h-2.5 w-2.5 rounded-full bg-destructive/40" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-brand-yellow/60" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-brand-green/50" />
+                      <span className="ml-3 rounded-md bg-background px-3 py-1 text-xs text-muted-foreground">
+                        {meta.domain}
+                      </span>
+                    </div>
+                    <div className="relative aspect-[3/4] w-full overflow-hidden sm:hidden">
+                      <Image
+                        src={meta.mobileImage}
+                        alt={item.projectTitle}
+                        fill
+                        className="object-cover"
+                        style={{ objectPosition: meta.mobilePosition }}
+                      />
+                    </div>
+                    <Image
+                      src={meta.desktopImage}
+                      alt={item.projectTitle}
+                      width={1400}
+                      height={900}
+                      className="hidden w-full sm:block"
+                    />
+                  </div>
 
-          <div className="mx-auto mt-6 flex max-w-xl flex-col items-center gap-2 text-center">
-            <h3 className="text-lg font-semibold">
-              {tShowcase("projectTitle")}
-            </h3>
-            <p className="text-sm text-muted-foreground">
-              {tShowcase("projectDescription")}
-            </p>
-            <Button
-              variant="outline"
-              className="mt-2"
-              nativeButton={false}
-              render={
-                <a
-                  href="https://www.hajekjan.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              }
-            >
-              {tShowcase("cta")}
-            </Button>
+                  <div className="mx-auto mt-6 flex max-w-xl flex-col items-center gap-2 text-center">
+                    <h3 className="text-lg font-semibold">
+                      {item.projectTitle}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {item.projectDescription}
+                    </p>
+                    <Button
+                      variant="outline"
+                      className="mt-2"
+                      nativeButton={false}
+                      render={
+                        <a
+                          href={meta.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        />
+                      }
+                    >
+                      {tShowcase("cta")}
+                    </Button>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

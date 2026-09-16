@@ -21,10 +21,18 @@
   },
   "Showcase": {
     "title": "Recent work",
-    "subtitle": "A look at a site I've designed and built.",
-    "projectTitle": "Jan Hájek Photography",
-    "projectDescription": "A portfolio site for a professional photographer, with an admin area for managing albums and photos.",
-    "cta": "Visit site"
+    "subtitle": "A look at sites I've designed and built.",
+    "cta": "Visit site",
+    "items": [
+      {
+        "projectTitle": "Jan Hájek Photography",
+        "projectDescription": "A portfolio site for a professional photographer, with an admin area for managing albums and photos."
+      },
+      {
+        "projectTitle": "Store Book Template",
+        "projectDescription": "A warm, welcoming template for an independent bookshop, built to show off hours, location, and an easy way to get in touch."
+      }
+    ]
   },
   "Process": {
     "eyebrow": "How I work",
