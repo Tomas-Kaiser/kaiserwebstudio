@@ -298,5 +298,9 @@
     "navigate": "Navigate",
     "contact": "Get in touch",
     "contactForm": "Send me a message"
+  },
+  "Cta": {
+    "title": "Ready for a website that brings you more customers?",
+    "subtitle": "Tell me about your business and get a free, no-obligation quote."
   }
 }

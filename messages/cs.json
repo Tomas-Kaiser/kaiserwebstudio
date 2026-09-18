@@ -298,5 +298,9 @@
     "navigate": "Navigace",
     "contact": "Kontakt",
     "contactForm": "Napište mi"
+  },
+  "Cta": {
+    "title": "Chcete web, který vám přivede víc zákazníků?",
+    "subtitle": "Napište mi o svém podnikání a získejte nezávaznou nabídku zdarma."
   }
 }

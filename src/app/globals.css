@@ -144,3 +144,22 @@
     @apply font-sans;
   }
 }
+main:has([data-cta-hang]) + footer {
+  padding-top: 15rem;
+}
+
+@media (min-width: 40rem) {
+  main:has([data-cta-hang]) + footer {
+    padding-top: 13rem;
+  }
+}
+
+main:not(:has([data-cta-hang])) + footer {
+  margin-top: 8rem;
+}
+
+@media (min-width: 40rem) {
+  main:not(:has([data-cta-hang])) + footer {
+    margin-top: 11rem;
+  }
+}

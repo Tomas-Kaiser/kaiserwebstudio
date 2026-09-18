@@ -1,14 +1,12 @@
 import { useTranslations } from "next-intl";
 import { Mail } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { Button } from "@/components/ui/button";
 import { navItems } from "@/lib/nav-items";
 
 const linkClass = "text-violet transition-colors hover:text-gold";
 
 export function Footer() {
   const t = useTranslations("Nav");
-  const tHome = useTranslations("Home");
   const tFooter = useTranslations("Footer");
 
   return (
@@ -42,13 +40,6 @@ export function Footer() {
               Kaiser Web Studio
             </Link>
             <p className="max-w-xs text-violet">{tFooter("tagline")}</p>
-            <Button
-              className="mt-2 h-10 bg-gold px-4 text-navy hover:bg-gold/90"
-              nativeButton={false}
-              render={<Link href="/contact" />}
-            >
-              {tHome("primaryCta")}
-            </Button>
           </div>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:col-span-7">

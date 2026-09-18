@@ -111,6 +111,7 @@ export default function Home() {
   const steps = tProcess.raw("steps") as ProcessStep[];
   const tTestimonials = useTranslations("Testimonials");
   const testimonials = tTestimonials.raw("items") as Testimonial[];
+  const tCta = useTranslations("Cta");
   const tPackages = useTranslations("Packages");
   const tiers = tPackages.raw("tiers") as PackageTier[];
 
@@ -396,7 +397,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-background px-4 pt-20 pb-36">
+      <section className="bg-background px-4 pt-20">
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-xl text-center">
             <Badge variant="secondary">{tTestimonials("eyebrow")}</Badge>
@@ -442,6 +443,42 @@ export default function Home() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section data-cta-hang className="relative z-10 -mt-12 px-4 sm:-mt-4">
+        <div className="relative mx-auto flex min-h-[22rem] max-w-5xl sm:min-h-[18rem] translate-y-1/2 flex-col justify-center overflow-hidden rounded-3xl border border-white/60 bg-[linear-gradient(135deg,rgba(255,246,214,0.72)_0%,rgba(244,214,120,0.62)_55%,rgba(139,92,246,0.7)_100%)] p-10 text-center shadow-[0_20px_50px_-20px_rgba(229,185,60,0.5),inset_0_1px_0_rgba(255,255,255,0.7),inset_0_-1px_0_rgba(255,255,255,0.25)] backdrop-blur-2xl backdrop-saturate-150 sm:p-14">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -top-20 -left-16 size-72 rounded-full bg-gold/40 blur-3xl"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -right-16 -bottom-24 size-80 rounded-full bg-[#8b5cf6]/50 blur-3xl"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-linear-to-b from-white/50 to-transparent"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -top-10 -bottom-10 left-1/3 w-24 rotate-12 bg-linear-to-r from-transparent via-white/25 to-transparent blur-md"
+          />
+
+          <div className="relative mx-auto flex max-w-2xl flex-col items-center gap-4">
+            <h2 className="text-3xl font-semibold tracking-tight text-navy text-balance sm:text-4xl">
+              {tCta("title")}
+            </h2>
+            <p className="text-navy/80 sm:text-lg">{tCta("subtitle")}</p>
+            <Button
+              size="lg"
+              className="mt-3 h-11 bg-navy px-6 text-base text-lavender hover:bg-navy/90"
+              nativeButton={false}
+              render={<Link href="/contact" />}
+            >
+              {t("primaryCta")}
+            </Button>
           </div>
         </div>
       </section>
