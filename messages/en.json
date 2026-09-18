@@ -293,6 +293,10 @@
   },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. All rights reserved.",
-    "privacyLink": "Privacy Policy"
+    "privacyLink": "Privacy Policy",
+    "tagline": "Fast, easy-to-find websites for growing businesses.",
+    "navigate": "Navigate",
+    "contact": "Get in touch",
+    "contactForm": "Send me a message"
   }
 }

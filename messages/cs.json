@@ -293,6 +293,10 @@
   },
   "Footer": {
     "copyright": "© {year} Kaiser Web Studio. Všechna práva vyhrazena.",
-    "privacyLink": "Ochrana osobních údajů"
+    "privacyLink": "Ochrana osobních údajů",
+    "tagline": "Rychlé, dobře dohledatelné weby pro rostoucí firmy.",
+    "navigate": "Navigace",
+    "contact": "Kontakt",
+    "contactForm": "Napište mi"
   }
 }

@@ -396,7 +396,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-background px-4 py-20">
+      <section className="bg-background px-4 pt-20 pb-36">
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-xl text-center">
             <Badge variant="secondary">{tTestimonials("eyebrow")}</Badge>
