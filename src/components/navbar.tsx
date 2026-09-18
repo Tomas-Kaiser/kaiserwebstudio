@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Menu, Check } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -27,7 +28,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-secondary/95 backdrop-blur supports-[backdrop-filter]:bg-secondary/80">
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
-        <Link href="/" className="font-semibold">
+        <Link href="/" className="flex items-center gap-2 font-semibold">
+          <Image src="/images/logo.svg" alt="" width={28} height={28} priority />
           Kaiser Web Studio
         </Link>
 

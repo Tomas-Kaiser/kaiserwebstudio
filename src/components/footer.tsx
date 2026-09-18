@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { navItems } from "@/lib/nav-items";
@@ -9,7 +10,8 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-secondary">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-10 text-center">
-        <Link href="/" className="font-semibold">
+        <Link href="/" className="flex items-center gap-2 font-semibold">
+          <Image src="/images/logo.svg" alt="" width={28} height={28} />
           Kaiser Web Studio
         </Link>
 

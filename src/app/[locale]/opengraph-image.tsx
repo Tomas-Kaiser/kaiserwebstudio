@@ -36,13 +36,23 @@ export default async function Image({
               width: 72,
               height: 72,
               borderRadius: "50%",
-              background: "#004b9b",
-              color: "#ffffff",
-              fontSize: 40,
-              fontWeight: 700,
+              background: "linear-gradient(135deg, #004b9b 0%, #6c44a4 100%)",
             }}
           >
-            K
+            <svg width="44" height="44" viewBox="0 0 64 64" fill="none">
+              <path
+                d="M16,42 L16,22 L24,31 L32,14 L40,31 L48,22 L48,42 Z"
+                fill="none"
+                stroke="#ffffff"
+                strokeWidth="4"
+                strokeLinejoin="round"
+                strokeLinecap="round"
+              />
+              <rect x="15" y="41" width="34" height="6" rx="2" fill="#ffffff" />
+              <circle cx="16" cy="22" r="3" fill="#ffffff" />
+              <circle cx="32" cy="14" r="3" fill="#ffffff" />
+              <circle cx="48" cy="22" r="3" fill="#ffffff" />
+            </svg>
           </div>
           <div style={{ fontSize: 36, fontWeight: 600, color: "#0d1218" }}>
             {t("title")}
