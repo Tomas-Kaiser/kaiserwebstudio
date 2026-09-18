@@ -26,8 +26,8 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 bg-navy">
-      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2 text-xl font-semibold text-lavender">
+      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
+        <Link href="/" className="flex items-center gap-2 text-2xl font-semibold text-lavender">
           Kaiser Web Studio
         </Link>
 
@@ -36,7 +36,7 @@ export function Navbar() {
             <Link
               key={item.key}
               href={item.href}
-              className="text-lg text-violet transition-colors hover:text-gold"
+              className="text-xl text-violet transition-colors hover:text-gold"
             >
               {t(item.key)}
             </Link>
