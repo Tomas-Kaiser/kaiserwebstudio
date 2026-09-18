@@ -113,6 +113,35 @@ function MobileHeroAccent({ className }: { className?: string }) {
   );
 }
 
+function WaveBackground({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 1440 150"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+      className={cn(
+        "pointer-events-none absolute inset-x-0 top-0 h-40 w-full sm:h-48",
+        className
+      )}
+    >
+      <path
+        d="M0,30 C240,55 480,10 720,25 C960,40 1200,10 1440,30 L1440,150 L0,150 Z"
+        fill="#e4e1d8"
+        opacity="0.35"
+      />
+      <path
+        d="M0,55 C220,80 440,45 740,60 C1040,75 1220,45 1440,65 L1440,150 L0,150 Z"
+        fill="#e4e1d8"
+        opacity="0.65"
+      />
+      <path
+        d="M0,80 C220,100 460,70 760,80 C1040,90 1220,70 1440,85 L1440,150 L0,150 Z"
+        fill="#e4e1d8"
+      />
+    </svg>
+  );
+}
+
 function getInitials(name: string) {
   return name
     .split(" ")
@@ -292,8 +321,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="packages" className="bg-muted/30 px-4 py-20">
-        <div className="mx-auto max-w-6xl">
+      <section
+        id="packages"
+        className="relative overflow-hidden bg-[linear-gradient(to_bottom,var(--background)_0,var(--background)_160px,#e4e1d8_160px,#e4e1d8_100%)] px-4 pt-32 pb-20 sm:bg-[linear-gradient(to_bottom,var(--background)_0,var(--background)_192px,#e4e1d8_192px,#e4e1d8_100%)] sm:pt-36"
+      >
+        <WaveBackground />
+
+        <div className="relative mx-auto max-w-6xl">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight">
               {tPackages("title")}
