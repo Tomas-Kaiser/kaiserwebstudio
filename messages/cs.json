@@ -21,16 +21,28 @@
   },
   "Showcase": {
     "title": "Poslední práce",
-    "subtitle": "Ukázka webů, které jsem navrhl a vytvořil.",
+    "subtitle": "Weby, které vypadají profesionálně, rychle se načítají a mění návštěvníky na zákazníky.",
     "cta": "Navštívit web",
     "items": [
       {
         "projectTitle": "Jan Hájek Photography",
-        "projectDescription": "Portfoliový web pro profesionálního fotografa s administrací pro správu alb a fotek."
+        "projectDescription": "Portfoliový web pro profesionálního fotografa s administrací pro správu alb a fotek.",
+        "tag": "Portfoliový web",
+        "highlights": [
+          "Přehledná galerie, kde vynikají fotky",
+          "Administrace pro správu alb a fotek",
+          "Skvěle vypadá na mobilu i počítači"
+        ]
       },
       {
         "projectTitle": "Store Book Template",
-        "projectDescription": "Vřelá šablona webu pro nezávislé knihkupectví, s přehledem otevírací doby, lokace a snadným kontaktem."
+        "projectDescription": "Vřelá šablona webu pro nezávislé knihkupectví, s přehledem otevírací doby, lokace a snadným kontaktem.",
+        "tag": "Šablona pro firmy",
+        "highlights": [
+          "Otevírací doba a lokace na první pohled",
+          "Snadný kontakt pro zákazníky",
+          "Skvěle vypadá na mobilu i počítači"
+        ]
       }
     ]
   },

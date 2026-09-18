@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Menu, Check } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -26,10 +25,9 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-secondary/95 backdrop-blur supports-[backdrop-filter]:bg-secondary/80">
+    <header className="sticky top-0 z-40 bg-navy">
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2 font-semibold">
-          <Image src="/images/logo.svg" alt="" width={28} height={28} priority />
+        <Link href="/" className="flex items-center gap-2 text-xl font-semibold text-lavender">
           Kaiser Web Studio
         </Link>
 
@@ -38,7 +36,7 @@ export function Navbar() {
             <Link
               key={item.key}
               href={item.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-lg text-violet transition-colors hover:text-gold"
             >
               {t(item.key)}
             </Link>
@@ -50,7 +48,10 @@ export function Navbar() {
           <Sheet>
             <SheetTrigger
               aria-label={t("menu")}
-              className={buttonVariants({ variant: "ghost", size: "icon" })}
+              className={cn(
+                buttonVariants({ variant: "ghost", size: "icon" }),
+                "text-lavender hover:bg-white/10 hover:text-gold"
+              )}
             >
               <Menu />
             </SheetTrigger>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { navItems } from "@/lib/nav-items";
@@ -8,10 +7,9 @@ export function Footer() {
   const tFooter = useTranslations("Footer");
 
   return (
-    <footer className="border-t border-border bg-secondary">
+    <footer className="bg-navy">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-10 text-center">
-        <Link href="/" className="flex items-center gap-2 font-semibold">
-          <Image src="/images/logo.svg" alt="" width={28} height={28} />
+        <Link href="/" className="flex items-center gap-2 font-semibold text-lavender">
           Kaiser Web Studio
         </Link>
 
@@ -20,20 +18,20 @@ export function Footer() {
             <Link
               key={item.key}
               href={item.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm text-violet transition-colors hover:text-gold"
             >
               {t(item.key)}
             </Link>
           ))}
         </nav>
 
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-violet/80">
           {tFooter("copyright", { year: new Date().getFullYear() })}
         </p>
 
         <Link
           href="/privacy"
-          className="text-xs text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
+          className="text-xs text-violet/80 underline-offset-4 transition-colors hover:text-gold hover:underline"
         >
           {tFooter("privacyLink")}
         </Link>

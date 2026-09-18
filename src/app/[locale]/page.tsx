@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ArrowRight, Check, Quote } from "lucide-react";
+import { ArrowRight, Check, ExternalLink, Quote } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -34,8 +34,10 @@ type ProcessStep = {
 };
 
 type ShowcaseItem = {
+  tag: string;
   projectTitle: string;
   projectDescription: string;
+  highlights: string[];
 };
 
 type ShowcaseMeta = {
@@ -63,56 +65,6 @@ const showcaseMeta: ShowcaseMeta[] = [
   },
 ];
 
-function MobileHeroAccent({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 160 120"
-      aria-hidden="true"
-      className={cn("pointer-events-none", className)}
-    >
-      <defs>
-        <linearGradient
-          id="mobileHeroBlob"
-          x1="0"
-          y1="0"
-          x2="1"
-          y2="1"
-        >
-          <stop offset="0%" stopColor="#004b9b" />
-          <stop offset="100%" stopColor="#6c44a4" />
-        </linearGradient>
-      </defs>
-
-      <circle cx="80" cy="60" r="58" fill="url(#mobileHeroBlob)" opacity="0.12" />
-
-      <circle cx="24" cy="18" r="4" fill="#8fb4e6" opacity="0.6" />
-      <circle cx="140" cy="96" r="3" fill="#ccac16" opacity="0.5" />
-
-      <rect
-        x="30"
-        y="28"
-        width="100"
-        height="64"
-        rx="10"
-        fill="#ffffff"
-        opacity="0.9"
-      />
-      <path
-        d="M30 38a10 10 0 0 1 10-10h80a10 10 0 0 1 10 10v6H30z"
-        fill="#f6f5f2"
-        opacity="0.9"
-      />
-      <circle cx="40" cy="34" r="2.5" fill="#e0574f" opacity="0.6" />
-      <circle cx="48" cy="34" r="2.5" fill="#ccac16" opacity="0.6" />
-      <circle cx="56" cy="34" r="2.5" fill="#094024" opacity="0.45" />
-
-      <rect x="40" y="52" width="50" height="6" rx="3" fill="#e2e0da" />
-      <rect x="40" y="64" width="70" height="6" rx="3" fill="#e2e0da" />
-      <rect x="40" y="76" width="32" height="8" rx="4" fill="#8fb4e6" />
-    </svg>
-  );
-}
-
 function WaveBackground({ className }: { className?: string }) {
   return (
     <svg
@@ -126,17 +78,17 @@ function WaveBackground({ className }: { className?: string }) {
     >
       <path
         d="M0,30 C240,55 480,10 720,25 C960,40 1200,10 1440,30 L1440,150 L0,150 Z"
-        fill="#e4e1d8"
+        fill="#d8d2ea"
         opacity="0.35"
       />
       <path
         d="M0,55 C220,80 440,45 740,60 C1040,75 1220,45 1440,65 L1440,150 L0,150 Z"
-        fill="#e4e1d8"
+        fill="#d8d2ea"
         opacity="0.65"
       />
       <path
         d="M0,80 C220,100 460,70 760,80 C1040,90 1220,70 1440,85 L1440,150 L0,150 Z"
-        fill="#e4e1d8"
+        fill="#d8d2ea"
       />
     </svg>
   );
@@ -164,36 +116,33 @@ export default function Home() {
 
   return (
     <main className="flex flex-1 flex-col">
-      <section className="relative mx-auto flex min-h-[calc(100dvh-3.5rem)] w-full max-w-7xl flex-col items-center justify-center gap-10 overflow-hidden px-4 py-14 sm:flex-row sm:items-center sm:justify-start lg:gap-14 lg:overflow-visible lg:py-16">
-        <Image
-          src="/images/hero-illustration.svg"
-          alt={t("imageAlt")}
-          width={800}
-          height={600}
-          priority
-          className="hidden sm:order-2 sm:block sm:w-[480px] sm:max-w-none sm:shrink-0 lg:w-full lg:max-w-2xl lg:min-w-0 lg:shrink lg:flex-1"
-        />
+      <section className="relative flex min-h-[80dvh] w-full flex-col items-center justify-between gap-10 bg-navy px-4 pt-24 text-center lg:pt-20">
+        <div className="flex flex-col items-center gap-6 sm:max-w-5xl">
+          <Badge className="border-gold/40 bg-gold/15 text-gold">
+            {t("eyebrow")}
+          </Badge>
 
-        <MobileHeroAccent className="h-28 w-36 sm:hidden" />
-
-        <div className="flex flex-col items-center gap-6 text-center sm:order-1 sm:max-w-md sm:shrink-0 sm:translate-x-[40px] sm:items-start sm:text-left lg:translate-x-[100px]">
-          <Badge variant="secondary">{t("eyebrow")}</Badge>
-
-          <h1 className="max-w-2xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
+          <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-balance text-lavender sm:text-5xl lg:text-6xl">
             {t("title")}
           </h1>
 
-          <p className="max-w-xl text-muted-foreground sm:text-lg">
+          <p className="max-w-3xl text-violet sm:text-lg">
             {t("subtitle")}
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 pt-2 lg:justify-start">
-            <Button size="lg" nativeButton={false} render={<Link href="/contact" />}>
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <Button
+              size="lg"
+              className="bg-gold text-navy hover:bg-gold/90"
+              nativeButton={false}
+              render={<Link href="/contact" />}
+            >
               {t("primaryCta")}
             </Button>
             <Button
               size="lg"
               variant="outline"
+              className="border-violet/50 bg-transparent text-lavender hover:bg-white/10 hover:text-gold dark:bg-transparent dark:hover:bg-white/10"
               nativeButton={false}
               render={<Link href="/services" />}
             >
@@ -201,61 +150,120 @@ export default function Home() {
             </Button>
           </div>
         </div>
+
+        <div className="relative z-10 w-full max-w-2xl">
+          <div aria-hidden="true" className="pb-[37.5%]" />
+          <Image
+            src="/images/hero-illustration.svg"
+            alt={t("imageAlt")}
+            width={800}
+            height={600}
+            priority
+            className="absolute inset-x-0 top-0 w-full rounded-2xl shadow-2xl"
+          />
+        </div>
       </section>
 
-      <section className="bg-muted/30 px-4 py-20">
-        <div className="mx-auto max-w-4xl">
-          <div className="mx-auto max-w-xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight">
+      <section className="bg-muted/30 px-4 pb-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-16 w-full max-w-2xl">
+            <div aria-hidden="true" className="pb-[37.5%]" />
+          </div>
+
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
               {tShowcase("title")}
             </h2>
-            <p className="mt-3 text-muted-foreground">
+            <p className="mt-3 text-muted-foreground sm:text-lg">
               {tShowcase("subtitle")}
             </p>
           </div>
 
-          <div className="mt-12 flex flex-col gap-16">
+          <div className="mt-16 flex flex-col gap-24 lg:gap-32">
             {showcaseItems.map((item, index) => {
               const meta = showcaseMeta[index];
+              const reversed = index % 2 === 1;
               return (
-                <div key={item.projectTitle}>
-                  <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-                    <div className="flex items-center gap-1.5 border-b border-border bg-muted px-4 py-2.5">
-                      <span className="h-2.5 w-2.5 rounded-full bg-destructive/40" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-brand-yellow/60" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-brand-green/50" />
-                      <span className="ml-3 rounded-md bg-background px-3 py-1 text-xs text-muted-foreground">
-                        {meta.domain}
-                      </span>
+                <article
+                  key={item.projectTitle}
+                  className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14"
+                >
+                  <div
+                    className={cn(
+                      "relative pb-8 lg:col-span-7",
+                      reversed && "lg:order-2"
+                    )}
+                  >
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-x-8 top-8 -bottom-2 rounded-full bg-linear-to-br from-primary/30 to-brand-purple/30 blur-3xl"
+                    />
+
+                    <div className="relative overflow-hidden rounded-xl border border-border bg-card shadow-2xl">
+                      <div className="flex items-center gap-1.5 border-b border-border bg-muted px-4 py-2.5">
+                        <span className="h-2.5 w-2.5 rounded-full bg-destructive/40" />
+                        <span className="h-2.5 w-2.5 rounded-full bg-brand-yellow/60" />
+                        <span className="h-2.5 w-2.5 rounded-full bg-brand-green/50" />
+                        <span className="ml-3 truncate rounded-md bg-background px-3 py-1 text-xs text-muted-foreground">
+                          {meta.domain}
+                        </span>
+                      </div>
+                      <Image
+                        src={meta.desktopImage}
+                        alt={item.projectTitle}
+                        width={1400}
+                        height={900}
+                        className="w-full"
+                      />
                     </div>
-                    <div className="relative aspect-[3/4] w-full overflow-hidden sm:hidden">
+
+                    <div
+                      className={cn(
+                        "absolute bottom-0 w-[28%] min-w-24 overflow-hidden rounded-[1.1rem] border-4 border-navy bg-navy shadow-2xl sm:rounded-3xl",
+                        reversed ? "left-3 sm:-left-4" : "right-3 sm:-right-4"
+                      )}
+                    >
                       <Image
                         src={meta.mobileImage}
-                        alt={item.projectTitle}
-                        fill
-                        className="object-cover"
+                        alt=""
+                        width={585}
+                        height={1266}
+                        sizes="(min-width: 1024px) 20vw, 30vw"
+                        quality={95}
+                        className="aspect-[9/19] w-full object-cover"
                         style={{ objectPosition: meta.mobilePosition }}
                       />
                     </div>
-                    <Image
-                      src={meta.desktopImage}
-                      alt={item.projectTitle}
-                      width={1400}
-                      height={900}
-                      className="hidden w-full sm:block"
-                    />
                   </div>
 
-                  <div className="mx-auto mt-6 flex max-w-xl flex-col items-center gap-2 text-center">
-                    <h3 className="text-lg font-semibold">
+                  <div
+                    className={cn(
+                      "flex flex-col items-start gap-4 text-left lg:col-span-5",
+                      reversed && "lg:order-1"
+                    )}
+                  >
+                    <Badge className="border-gold/50 bg-gold/20 text-foreground">
+                      {item.tag}
+                    </Badge>
+                    <h3 className="text-2xl font-semibold tracking-tight sm:text-3xl">
                       {item.projectTitle}
                     </h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-muted-foreground">
                       {item.projectDescription}
                     </p>
+
+                    <ul className="flex flex-col gap-2.5 text-sm">
+                      {item.highlights.map((highlight) => (
+                        <li key={highlight} className="flex items-start gap-2">
+                          <Check className="mt-0.5 size-4 shrink-0 text-primary" />
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+
                     <Button
-                      variant="outline"
-                      className="mt-2"
+                      size="lg"
+                      className="mt-2 h-10 px-4"
                       nativeButton={false}
                       render={
                         <a
@@ -266,9 +274,10 @@ export default function Home() {
                       }
                     >
                       {tShowcase("cta")}
+                      <ExternalLink data-icon="inline-end" />
                     </Button>
                   </div>
-                </div>
+                </article>
               );
             })}
           </div>
@@ -323,7 +332,7 @@ export default function Home() {
 
       <section
         id="packages"
-        className="relative overflow-hidden bg-[linear-gradient(to_bottom,var(--background)_0,var(--background)_160px,#e4e1d8_160px,#e4e1d8_100%)] px-4 pt-32 pb-20 sm:bg-[linear-gradient(to_bottom,var(--background)_0,var(--background)_192px,#e4e1d8_192px,#e4e1d8_100%)] sm:pt-36"
+        className="relative overflow-hidden bg-[linear-gradient(to_bottom,var(--background)_0,var(--background)_160px,#d8d2ea_160px,#d8d2ea_100%)] px-4 pt-32 pb-20 sm:bg-[linear-gradient(to_bottom,var(--background)_0,var(--background)_192px,#d8d2ea_192px,#d8d2ea_100%)] sm:pt-36"
       >
         <WaveBackground />
 

@@ -22,7 +22,10 @@ export function LanguageSwitcher() {
     <DropdownMenu>
       <DropdownMenuTrigger
         aria-label="Change language"
-        className={buttonVariants({ variant: "ghost", size: "icon" })}
+        className={cn(
+          buttonVariants({ variant: "ghost", size: "icon" }),
+          "cursor-pointer text-lavender hover:bg-white/10 hover:text-gold aria-expanded:bg-white/10 aria-expanded:text-gold"
+        )}
       >
         <Globe />
       </DropdownMenuTrigger>

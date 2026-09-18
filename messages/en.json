@@ -21,16 +21,28 @@
   },
   "Showcase": {
     "title": "Recent work",
-    "subtitle": "A look at sites I've designed and built.",
+    "subtitle": "Websites designed to look sharp, load fast, and turn visitors into customers.",
     "cta": "Visit site",
     "items": [
       {
         "projectTitle": "Jan Hájek Photography",
-        "projectDescription": "A portfolio site for a professional photographer, with an admin area for managing albums and photos."
+        "projectDescription": "A portfolio site for a professional photographer, with an admin area for managing albums and photos.",
+        "tag": "Portfolio site",
+        "highlights": [
+          "Clean gallery that puts the photos first",
+          "Admin area to manage albums and photos",
+          "Looks great on phones and desktops"
+        ]
       },
       {
         "projectTitle": "Store Book Template",
-        "projectDescription": "A warm, welcoming template for an independent bookshop, built to show off hours, location, and an easy way to get in touch."
+        "projectDescription": "A warm, welcoming template for an independent bookshop, built to show off hours, location, and an easy way to get in touch.",
+        "tag": "Business template",
+        "highlights": [
+          "Opening hours and location at a glance",
+          "Easy way for customers to get in touch",
+          "Looks great on phones and desktops"
+        ]
       }
     ]
   },
